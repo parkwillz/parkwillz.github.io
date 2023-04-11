@@ -1,0 +1,18 @@
+body{
+  background-color: rgb(56, 62, 66);
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  margin: 10px 20px;
+  color: rgb(253, 249, 216);
+  
+
+}
+
+nav ul li a{
+  color: rgb(253, 249, 216);
+  font-size: 20px;
+}
