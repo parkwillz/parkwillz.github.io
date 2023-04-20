@@ -1,18 +1,55 @@
 body{
   background-color: rgb(56, 62, 66);
 }
+#header{
+  width: 100%;
+  height: 100px;
+  
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 nav ul li{
   display: inline-block;
   list-style: none;
-  text-decoration: none;
-  margin: 10px 20px;
-  color: rgb(253, 249, 216);
-  
-
+  margin: 10px 10px;
 }
 
 nav ul li a{
   color: rgb(253, 249, 216);
-  font-size: 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li a:hover{
+  color: dimgrey;
+}
+
+
+.Intro-Text{
+  color: rgb(253, 249, 216);
+  float: left;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.Intro-Text h1{
+  font-size: 60px;
+}
+
+
+.language-images{
+  padding-top: 50px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  align-items: center;
+  display: flex;
+  width: 100%;
 }
