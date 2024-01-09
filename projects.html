@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "bootstrap.min.css">
+    <style>
+
+        h2 {
+            text-decoration: underline;
+        }
+        h1{
+          text-decoration: underline;
+        }
+
+        .projects-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .projects-description {
+            text-align: center;
+            margin-bottom: 40px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .project-section {
+            margin-bottom: 40px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .project-description {
+            margin-top: 10px;
+        }
+
+        .project-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .project-image {
+            width: 30%;
+            margin-bottom: 10px;
+        }
+
+        .project-image img:hover {
+            border: 2px solid black; /* Border color on hover */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .navbar {
+            margin-bottom: 40px;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox img {
+            max-width: 80%;
+            max-height: 80%;
+        }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Parker Williams</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="exp.html">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="skills.html">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true" aria-current="page" href="running.html">Running</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="projects-header">
+      <h1>Projects</h1>
+  </div>
+
+  <div class="projects-description">
+      <p>This page showcases various projects I've worked on. Explore each section to learn more about my experiences and contributions. Click on an image to display a larger version.</p>
+  </div>
+
+
+    <div class="project-section">
+      <h2>MIS Field Project</h2>
+      <p class="project-description">My team and I created a web application for the MIS Department. This application serves as a location where clients and companies can come in, create an account, and submit project ideas for the field project class. It comes with a fully functional login page, project dashboard where clients can see the status of projects they submit, and an admin dashboard where administrators can view client contact information, assign them to a company, and view submitted projects to approve, review or reject. The site also comes with a dark mode! Tools used: ASP .Net, Bootstrap, Microsoft SQL Server, HTML, CSS, C#, Javascript. (Disclaimer: I do not own the rights to the OU/Price College of Business logos, it is not a revenue generating website).</p>
+      <div class="project-images">
+          <div class="project-image">
+              <img src="/Site Contents/fp-1.png" alt="Field Project Image 1" onclick="openLightbox('Site Contents/fp-1.png')">
+              <p class="project-description">This is the homepage of our application.</p>
+          </div>
+          <div class="project-image">
+              <img src="Site Contents/fp-2.png" alt="Field Project Image 2" onclick="openLightbox('Site Contents/fp-2.png')">
+              <p class="project-description">Project dashboard where admins can see all submitted projects.</p>
+          </div>
+          <div class="project-image">
+              <img src="Site Contents/fp-3.png" alt="Field Project Image 3" onclick="openLightbox('Site Contents/fp-3.png')">
+              <p class="project-description">Admin dashboard and a display of our dark mode.</p>
+          </div>
+          <div class="project-image">
+              <img src="Site Contents/fp-4.png" alt="Field Project Image 4" onclick="openLightbox('Site Contents/fp-4.png')">
+              <p class="project-description">Fully functional login page.</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="project-section">
+      <h2>E-Commerce Web Design</h2>
+      <p class="project-description"> My partner and I created a website that serves as a simple NFL Statistics Database. It shows basic statistics for Quarterbacks, Wide Receivers, and Running Backs through the first ten weeks of the current NFL season. You can directly add players, update their statistics, and delete players directly to the database from the website. Tools used: HTML, CSS, Javascript, Bootstrap, PHP, SQL. (I do not own the rights to the NFL Logo along with the images of players, it is not a revenue generating website). You can view this website by clicking <a href="https://project.parkwillz.oucreate.com/" target="_blank">here</a> or going to project.parkwillz.oucreate.com.</p>
+      <div class="project-images">
+          <div class="project-image">
+              <img src="Site Contents/ecom-1.png" alt="Ecom Image 1" onclick="openLightbox('Site Contents/ecom-1.png')">
+              <p class="project-description">Homepage of our website.</p>
+          </div>
+          <div class="project-image">
+              <img src="Site Contents/ecom-2.png" alt="Ecom Image 2" onclick="openLightbox('Site Contents/ecom-2.png')">
+              <p class="project-description">A display of our website connecting to our database. This page shows us the top 10 quarterbacks in the NFL through the first 10 weeks. Comes with Add, Edit and Delete functionality.</p>
+          </div>
+          <div class="project-image">
+              <img src="Site Contents/ecom-3.png" alt="Ecom Image 3" onclick="openLightbox('Site Contents/ecom-3.png')">
+              <p class="project-description">Use of an external Javascript library to display running back touchdowns visually. (Chartly.JS)</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="project-section">
+      <h2>Analytical Programming (R)</h2>
+      <p class="project-description">My team and I were tasked with finding a dataset and analyzing it within R. We chose a 10 Year Diabetes Dataset with over 100,000 lines of data, came up with hypotheses, and had to prove these hypotheses using R. I learned how to clean lots of data and analyze a real world dataset numerically and visually using R. Below pictured is a part of one of the analyses of my hypothesis. Tools Used: R</p>
+      <div class="project-images">
+          <div class="project-image">
+              <img src="Site Contents/r-1.png" alt="R Project" onclick="openLightbox('Site Contents/r-1.png')">
+              <p class="project-description">One of my analyses of my hypothesis I worked on.</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-image">
+  </div>
+
+  <script>
+    function openLightbox(imageSrc) {
+        document.getElementById('lightbox-image').src = imageSrc;
+        document.getElementById('lightbox').style.display = 'flex';
+    }
+
+    function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+
+  <div class="project-section">
+    <h2>Data Warehousing</h2>
+    <p class="project-description">My team and I were tasked with creating a data warehouse. We were given three datasets and had to perform automated transformations in Pentaho that would directly interact with our data warehouse, process our initial data inputs, and put our newly transformed data into our core layer. Tools used: PostgreSQL, Pentaho Data Integration, pgAdmin</p>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
