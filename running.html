@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Running</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "bootstrap.min.css">
+    <style>
+      body {
+          
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            overflow: hidden; /* Clear floats */
+        }
+
+        section img {
+            max-width: 40%;
+            height: auto;
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+      
+
+        section p {
+            text-align: justify;
+            margin-bottom: 20px; /* Add space between paragraphs */
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three columns */
+            gap: 20px; /* Adjust the gap between images */
+            justify-content: center;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+       
+        .runnings-description {
+            text-align: center;
+            margin-bottom: 40px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .running-section {
+            margin-bottom: 40px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .running-description {
+            margin-top: 10px;
+        }
+
+        .running-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .running-image {
+            width: 30%;
+            margin-bottom: 10px;
+        }
+
+        .running-image img:hover {
+            border: 2px solid black; /* Border color on hover */
+        }
+
+        .running-section img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            cursor: pointer;
+        }
+        
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            margin: 0 10px; /* Adjust the margin between the images */
+        }
+
+        .caption {
+            text-align: center;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox img {
+            max-width: 80%;
+            max-height: 80%;
+        }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Parker Williams</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="exp.html">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="skills.html">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="running.html">Running</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <section>
+      <h2 style="text-align: center; text-decoration: underline;">Introduction</h2>
+      <!-- Image and Description -->
+      <img src="Running Contents/hs-track-1.jpg" alt="image">
+      
+        <p>
+          I began my running journey my senior year of high school. I played basketball my entire life and decided to switch things up. My coach, Jessica Richards, took me under her wing and I started training with the high school team towards the end of my junior year. I joined the team to elevation train in Taos, New Mexico, where I immediately fell in love with the sport and I stuck with it through the summer training, and started with my first cross country season my senior year.
+        </p>
+     
+        <p>
+          During high school cross country, I made it to regionals in my first year of running. I clocked a personal best in the 5k of 17:28. I then went right into track season, which got cancelled after a couple of meets due to COVID. In my short time in track, I ran personal bests of 2:09 in the 800m, and a 4:51 in the Mile. Despite COVID, I continued to train on my own, and during this time I ran a 10:31 on road in the 2 mile, and a 9:38 in the 3k. 
+        </p>
+  </section>
+
+  <section>
+    <h2 style="text-align: center; text-decoration: underline;">COVID Training</h2>
+    <p style="text-align: center;">When COVID hit I continued training with my friends and teammates. During this time I was running consistent mileage of around 45-50 miles per week, with my highest mileage week being 60 miles. I took a road trip to Colorado during this time to train at elevation, where we visited Colorado Springs and Rocky Mountain National Park.</p>
+    <p style="text-align: center;">Some moments from training during COVID:</p>
+
+  </section>
+
+  <div class="running-section">
+    <div class="running-images">
+        <div class="running-image">
+            <img src="/Running Contents/IMG_9864.JPG" alt="COVID Training 1" onclick="openLightbox('Running Contents/IMG_9864.JPG')">
+            <p class="running-description">Going on a run near Rocky Mountain National Park.</p>
+        </div>
+        <div class="running-image">
+            <img src="Running Contents/IMG_9470.jpg" alt="COVID Training 2" onclick="openLightbox('Running Contents/IMG_9470.jpg')">
+            <p class="running-description">Running on some North Texas backroads with London Culbreath and Tony Berardesco.</p>
+        </div>
+        <div class="running-image">
+            <img src="Running Contents/IMG_0555.JPG" alt="COVID Training 3" onclick="openLightbox('Running Contents/IMG_0555.JPG')">
+            <p class="running-description">Post-3K Time Trial.</p>
+        </div>
+        <div class="running-image">
+            <img src="Running Contents/covidcal.png" alt="COVID Training 4" onclick="openLightbox('Running Contents/covidcal.png')">
+            <p class="running-description">A normal week of summer training during COVID. Two workouts, some doubles, a day off, and a long run.</p>
+        </div>
+    </div>
+</div>
+
+<section>
+  <h2 style="text-align: center; text-decoration: underline;">Summer 2021 Training</h2>
+  <p style="text-align: center;">In the Summer of 2021 I came home after my first year of school and made some new running friends. We would get together every morning in various spots around Dallas and train together. I don't have a lot of pictures from this time, but I was hitting around 45-55 Miles Per Week.</p>
+
+</section>
+
+<div class="running-section">
+  <div class="running-images">
+      <div class="running-image">
+          <img src="/Running Contents/Screenshot 2023-12-11 at 2.10.46 PM.png" alt="Summer Training 1" onclick="openLightbox('Running Contents/Screenshot 2023-12-11 at 2.10.46 PM.png')">
+          <p class="running-description">This was a typical run schedule for my summer.</p>
+      </div>
+  </div>
+</div>
+
+<section>
+  <h2 style="text-align: center; text-decoration: underline;">Races!</h2>
+  <p style="text-align: center;">This section highlights races I have participated in during my time in college. My goal is to eventually qualify for the Boston Marathon!</p>
+</section>
+
+<div class="running-section">
+  <div class="running-images">
+      <div class="running-image">
+          <img src="/Running Contents/IMG_0755.jpg" alt="Dallas Half 1" onclick="openLightbox('Running Contents/IMG_0755.JPG')">
+          <p class="running-description">My first half marathon. The BMW Dallas Half Marathon.</p>
+      </div>
+      <div class="running-image">
+        <img src="/Running Contents/IMG_0756.jpg" alt="OKC Half 1" onclick="openLightbox('Running Contents/IMG_0756.JPG')">
+        <p class="running-description">My second half marathon. The OKC Memorial Half. I set a PR of 1:22.59.</p>
+    </div>
+    <div class="running-image">
+      <img src="/Running Contents/IMG_0757.jpg" alt="Car Panthers 1" onclick="openLightbox('Running Contents/IMG_0757.JPG')">
+      <p class="running-description">The Carolina Panthers 5k, this course was short, but we got to run inside the stadium!</p>
+    </div>
+    <div class="running-image">
+      <img src="/Running Contents/IMG_0758.jpg" alt="Mile 1" onclick="openLightbox('Running Contents/IMG_0758.JPG')">
+      <p class="running-description">Charlotte Track Series Mile. Ran a 4:53.</p>
+    </div>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-image">
+</div>
+
+<script>
+  function openLightbox(imageSrc) {
+      document.getElementById('lightbox-image').src = imageSrc;
+      document.getElementById('lightbox').style.display = 'flex';
+  }
+
+  function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+  }
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
